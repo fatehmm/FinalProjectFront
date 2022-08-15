@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  text-decoration: none !important;
+}
+* a {
+  color: black !important;
+}
+
+.homepage {
+  background-color: cyan;
+  height: 500vh;
+}
+.homepage__header {
+  z-index: 100000;
+}
+.homepage__header .navbar {
+  position: absolute;
+  width: 100%;
+  border: 1px solid red;
+  display: flex;
+  box-sizing: border-box;
+  padding: 2% 10%;
+}
+.homepage__header .navbar__logo {
+  flex-grow: 1;
+}
+.homepage__header .navbar__links {
+  flex-grow: 2;
+}
+.homepage__header .navbar__links__ul {
+  display: flex;
+  list-style-type: none;
+  width: 80%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+.homepage__header .navbar__links__ul li {
+  position: relative;
+}
+.homepage__header .navbar__links__ul li a {
+  font-family: Poppins, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+}
+.homepage__header .navbar__links__ul li a:hover {
+  color: red !important;
+  transition: 0.5s;
+}
+.homepage__header .navbar__links__ul li #accesories-div {
+  width: 350%;
+}
+.homepage__header .navbar__links__ul li:hover .navbar__links__ul__container {
+  display: flex !important;
+}
+.homepage__header .navbar__links__ul__container {
+  z-index: 10000;
+  background-color: white;
+  -webkit-animation-name: slide-out;
+          animation-name: slide-out;
+  -webkit-animation-duration: 0.2s;
+          animation-duration: 0.2s;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: 1000%;
+  height: 500%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  box-sizing: content-box;
+  padding: 10% 20%;
+  display: none;
+}
+.homepage__header .navbar__links__ul__container div ul {
+  padding: 0;
+  list-style-type: none;
+}
+.homepage__header .navbar__links__ul__container div ul li a {
+  font-size: 13px;
+  color: gray !important;
+}
+.homepage__header .navbar__links__ul__container div ul li a:hover {
+  color: black !important;
+}
+.homepage__header .navbar__links__ul__container #indoor-toy::before {
+  content: "Indoor toy";
+  font-weight: 600;
+}
+.homepage__header .navbar__links__ul__container #kids-entertainment::before {
+  content: "Kids entertainment";
+  font-weight: 600;
+}
+.homepage__header .navbar__links__ul__container #photography::before {
+  content: "Photoghaphy";
+  font-weight: 600;
+}
+.homepage__header .navbar__links__ul__container #ryze-tello::before {
+  content: "Ryze Tello";
+  font-weight: 600;
+}
+.homepage__header .navbar__links__ul__container #force-scoot::before {
+  content: "Force Scoot S3";
+  font-weight: 600;
+}
+.homepage__header .navbar__icons {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.homepage__header .navbar__icons a i {
+  font-size: 25px;
+  color: black;
+}
+.homepage .slider {
+  width: 100% !important;
+}
+.homepage .slider img {
+  width: 100% !important;
+}
+
+@-webkit-keyframes slide-out {
+  from {
+    height: 0;
+  }
+  to {
+    height: 500%;
+  }
+}
+
+@keyframes slide-out {
+  from {
+    height: 0;
+  }
+  to {
+    height: 500%;
+  }
+}
+@-webkit-keyframes slide-nav {
+  from {
+    top: -100%;
+  }
+  to {
+    top: 0;
+  }
+}
+@keyframes slide-nav {
+  from {
+    top: -100%;
+  }
+  to {
+    top: 0;
+  }
+}
+.fixed-navbar {
+  position: fixed !important;
+  background-color: white;
+  top: 0;
+  -webkit-animation-name: slide-nav;
+          animation-name: slide-nav;
+  -webkit-animation-duration: 0.2s;
+          animation-duration: 0.2s;
+  width: 100%;
+}/*# sourceMappingURL=home.css.map */
