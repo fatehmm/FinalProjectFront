@@ -15,6 +15,6 @@ $(document).ready(function(){
         items: 1,
         dots: true,
         dotsEach: true,
-        nav: true
+      
     });
   });

@@ -1,22 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   text-decoration: none !important;
+  font-family: Poppins, sans-serif;
 }
 * a {
   color: black !important;
 }
 
 .homepage {
-  background-color: cyan;
   height: 500vh;
 }
-.homepage__header {
-  z-index: 100000;
-}
 .homepage__header .navbar {
+  z-index: 100000;
   position: absolute;
   width: 100%;
-  border: 1px solid red;
   display: flex;
   box-sizing: border-box;
   padding: 2% 10%;
@@ -116,9 +113,35 @@
 }
 .homepage .slider {
   width: 100% !important;
+  height: 80vh;
+  z-index: 0;
 }
 .homepage .slider img {
   width: 100% !important;
+}
+.homepage .slider #slider-first-div {
+  position: relative;
+  display: flex;
+}
+.homepage .slider #slider-first-div div {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.homepage .slider #slider-second-div {
+  position: relative;
+  height: 80vh;
+}
+.homepage .slider h2 {
+  position: absolute;
+}
+.homepage .icons .icon-spans {
+  width: 60px;
+  height: 60px;
+}
+.homepage .icons:first-child:first-child {
+  background-image: url(https://demo.ishithemes.com/opencart/OPC100/OPC100L02/image/cache/catalog/Service/Services-1-50x50.png) no-repeat;
 }
 
 @-webkit-keyframes slide-out {

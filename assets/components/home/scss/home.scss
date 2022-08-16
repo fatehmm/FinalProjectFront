@@ -1,6 +1,7 @@
 *
 {
     text-decoration: none !important;
+    font-family: Poppins, sans-serif;
     a
     {
         color: black !important;
@@ -10,17 +11,15 @@
 
 .homepage
 {
-    
-    background-color: cyan;
     height: 500vh;
     &__header
     {
-        z-index: 100000;
+        
         .navbar
-        {
+        {   z-index: 100000;
             position: absolute;
             width: 100%;
-            border: 1px solid red;
+            // border: 1px solid red;
             display: flex;
             box-sizing: border-box;
             padding: 2% 10%;
@@ -159,12 +158,47 @@
 
     .slider{
         width: 100% !important;
+        height: 80vh;
+
+       
+        z-index: 0;
         img{
             width: 100% !important;
         }
+        #slider-first-div{
+            position: relative;
+            display: flex;
+            // align-items: center;
+            div{
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                
+            }
+            .slider-first-div__text-div{
+
+            }
+        }
+        #slider-second-div{
+            position: relative;
+            height: 80vh;
+
+        }
+        h2{
+            position: absolute;
+        }
     }
     
-
+    .icons{
+        .icon-spans{
+            width: 60px;
+            height: 60px;
+        }
+    }
+    .icons:first-child:first-child{
+        background-image: url(https://demo.ishithemes.com/opencart/OPC100/OPC100L02/image/cache/catalog/Service/Services-1-50x50.png) no-repeat;
+    }
 
 
 }
