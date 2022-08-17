@@ -7,9 +7,6 @@
   color: black !important;
 }
 
-.homepage {
-  height: 500vh;
-}
 .homepage__header .navbar {
   z-index: 100000;
   position: absolute;
@@ -112,8 +109,7 @@
   color: black;
 }
 .homepage .slider {
-  width: 100% !important;
-  height: 80vh;
+  max-width: 100%;
   z-index: 0;
 }
 .homepage .slider img {
@@ -131,19 +127,185 @@
 }
 .homepage .slider #slider-second-div {
   position: relative;
-  height: 80vh;
 }
 .homepage .slider h2 {
   position: absolute;
 }
-.homepage .icons .icon-spans {
+.homepage .icons > .row.wrapper {
+  margin: 50px 20px;
+  display: flex;
+  align-items: stretch;
+}
+.homepage .icons > .row.wrapper > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.homepage .icons > .row.wrapper .icon-spans__title {
+  font-size: 18px;
+  font-weight: 500;
+}
+.homepage .icons > .row.wrapper .icon-spans__text {
+  color: gray;
+}
+.homepage .icons img {
   width: 60px;
   height: 60px;
 }
-.homepage .icons:first-child:first-child {
-  background-image: url(https://demo.ishithemes.com/opencart/OPC100/OPC100L02/image/cache/catalog/Service/Services-1-50x50.png) no-repeat;
+.homepage .product-info {
+  margin: 100px 0;
+}
+.homepage .product-info__image img {
+  width: 90%;
+  height: 90%;
+}
+.homepage .product-info__infos:first-child span {
+  color: red;
+  letter-spacing: 7px;
+  font-size: 16px;
+}
+.homepage .product-info__infos__title h3 {
+  font-size: 40px;
+  line-height: 40px;
+  letter-spacing: 0;
+  font-weight: 600;
+  margin: 0;
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+  position: relative;
+}
+.homepage .product-info__infos__title h3::before {
+  position: absolute;
+  content: "";
+  width: 80px;
+  height: 4px;
+  background: #eb4d4b;
+  bottom: 0;
+  text-align: center;
+  margin: 0 auto;
+  left: 0;
+  right: auto;
+}
+.homepage .product-info__infos__text p {
+  margin-bottom: 25px;
+  color: gray;
+  letter-spacing: 0.5px;
+  font-size: 14px;
+  line-height: 25px;
+}
+.homepage .product-info__infos__ul ul {
+  list-style-type: none;
+  height: 30%;
+}
+.homepage .product-info__infos__ul ul li {
+  position: relative;
+  display: inline-block;
+  width: 40%;
+  padding: 0 12px 0 18px;
+  margin-bottom: 10px;
+  color: gray;
+  font-size: 15px;
+}
+.homepage .product-info__infos__ul ul li::before {
+  position: absolute;
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #eb4d4b;
+  top: 8px;
+  left: 0;
+}
+.homepage .product-info__infos__button button {
+  background-color: #eb4d4b;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.homepage .review-section .ishitestimonials {
+  height: 80vh !important;
+  position: relative;
+}
+.homepage .review-section .ishitestimonials img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 5px solid rgba(255, 0, 0, 0.742);
+  position: absolute;
+  left: 10%;
+  top: -20%;
+}
+.homepage .review-section .ishitestimonials .owl-item {
+  width: 690px !important;
+  margin-right: 30px;
+  margin: 20px 40px;
+  background-color: whitesmoke;
+  height: 15em;
+  box-sizing: border-box;
+  padding: 65px 30px 40px;
+  margin-top: 60px;
+}
+.homepage .review-section .ishitestimonials .owl-item .user-description {
+  font-size: 1em;
+  color: gray;
+}
+.homepage .review-section .ishitestimonials .owl-item .user-designation {
+  color: red;
+}
+.homepage .review-section .ishitestimonials .section-header {
+  height: 40% !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.homepage .review-section .ishitestimonials .section-header h3 {
+  font-size: 40px;
+  line-height: 40px;
+  letter-spacing: 0;
+  font-weight: 600;
+  margin: 0;
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+  position: relative;
+}
+.homepage .review-section .ishitestimonials .section-header h3::before {
+  position: absolute;
+  content: "";
+  width: 80px;
+  height: 4px;
+  background: #eb4d4b;
+  bottom: 0;
+  text-align: center;
+  margin: 0 auto;
+  left: 40%;
+  right: auto;
+}
+.homepage .review-section .ishitestimonials .section-header span {
+  color: red;
+  letter-spacing: 7px;
+  font-size: 1em;
+}
+.homepage .review-section .ishitestimonials .ishitestimonials-container, .homepage .review-section .ishitestimonials .container {
+  height: 100%;
 }
 
+@media screen and (max-width: 821px) {
+  .product-info {
+    text-align: center;
+    margin: 0 20px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .product-info li {
+    display: inline;
+    width: 100%;
+  }
+}
 @-webkit-keyframes slide-out {
   from {
     height: 0;
@@ -152,7 +314,6 @@
     height: 500%;
   }
 }
-
 @keyframes slide-out {
   from {
     height: 0;

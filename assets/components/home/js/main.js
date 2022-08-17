@@ -18,3 +18,27 @@ $(document).ready(function(){
       
     });
   });
+
+  $(".ishitestimonials").owlCarousel({
+    loop:true,
+    dots:false,
+    margin:30,
+    autoplay:0,
+    responsive:{
+        0:{
+            items:1
+        },
+        544:{
+            items:1
+        },
+        768:{
+            items:1
+        },
+        992:{
+            items:2
+        },
+        1200:{
+            items:2
+        }
+    }
+});

@@ -11,7 +11,7 @@
 
 .homepage
 {
-    height: 500vh;
+    // height: 500vh;
     &__header
     {
         
@@ -157,10 +157,7 @@
 
 
     .slider{
-        width: 100% !important;
-        height: 80vh;
-
-       
+        max-width: 100%;
         z-index: 0;
         img{
             width: 100% !important;
@@ -176,13 +173,10 @@
                 justify-content: space-evenly;
                 
             }
-            .slider-first-div__text-div{
-
-            }
         }
         #slider-second-div{
             position: relative;
-            height: 80vh;
+            // height: 80vh;
 
         }
         h2{
@@ -191,20 +185,222 @@
     }
     
     .icons{
-        .icon-spans{
+        & > .row.wrapper{
+            margin: 50px 20px;
+            
+            display: flex;
+            align-items: stretch;
+            & > div{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                text-align: center;
+            }
+            .icon-spans{
+                &__title{
+                    font-size: 18px;
+                    font-weight: 500;
+                }
+                &__text{
+                    color: gray;
+                }
+            }
+        }
+        img{
             width: 60px;
             height: 60px;
         }
+        
     }
-    .icons:first-child:first-child{
-        background-image: url(https://demo.ishithemes.com/opencart/OPC100/OPC100L02/image/cache/catalog/Service/Services-1-50x50.png) no-repeat;
+    
+
+    .product-info{
+        margin: 100px 0;
+        &__image{
+            img{
+                width: 90%;
+            height: 90%;
+            }
+        }
+        &__infos{
+            &:first-child{
+                span{
+                    color: red;
+                    letter-spacing: 7px;
+                    font-size: 16px;
+                }
+            }
+
+            &__title{
+                h3{
+                    font-size: 40px;
+                    line-height: 40px;
+                    letter-spacing: 0;
+                    font-weight: 600;
+                    margin: 0;
+                    margin-bottom: 25px;
+                    padding-bottom: 25px;
+                    position:relative;
+                }
+                h3::before{
+                    position: absolute;
+                    content: "";
+                    width: 80px;
+                    height: 4px;
+                    background: #eb4d4b;
+                    bottom: 0;
+                    text-align: center;
+                    margin: 0 auto;
+                    left: 0;
+                    right: auto;
+                }
+            }
+            &__text{
+                p{
+                    margin-bottom: 25px;
+                    color: gray;
+                    letter-spacing: 0.5px;
+                    font-size: 14px;
+                    line-height: 25px;
+                }
+                
+            }
+            &__ul{
+                ul{
+                    list-style-type: none;
+                   
+                    height: 30%;
+                    li{
+                        position: relative;
+                        display: inline-block;
+                        width: 40%;
+                        padding: 0 12px 0 18px;
+                        margin-bottom: 10px;
+                        color: gray;
+                        font-size: 15px;
+                    }
+                    li::before{
+                        position: absolute;
+                        content: "";
+                        width: 8px;
+                        height: 8px;
+                        border-radius: 50%;
+                        background: #eb4d4b;
+                        top: 8px;
+                        left: 0;
+                    }
+                }
+            }
+            &__button{
+                button{
+                    background-color: #eb4d4b;
+                    padding: 10px 25px;
+                    border: none;
+                    border-radius: 20px;
+                    color: white;
+                    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                }
+            }
+            
+        }
     }
+
+    .review-section{
+     
+        .ishitestimonials{
+           height: 80vh !important;
+           
+           position: relative;
+            img{
+                width: 90px;
+                height: 90px;
+                border-radius: 50%;
+                border: 5px solid rgba(255, 0, 0, 0.742);
+                position: absolute;
+                left: 10%;
+                top: -20%;
+            }
+            .owl-item{
+                width: 690px !important;
+                margin-right: 30px;
+                margin: 20px 40px;
+                background-color: whitesmoke;
+                height: 15em;
+                box-sizing: border-box;
+                padding: 65px 30px 40px;
+                margin-top: 60px;
+                .user-description{
+                    font-size: 1em;
+                    color: gray;
+                }
+                .user-designation{
+                    color: red;
+                }
+            }
+            .section-header{
+                height: 40% !important;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                h3{
+                    font-size: 40px;
+                    line-height: 40px;
+                    letter-spacing: 0;
+                    font-weight: 600;
+                    margin: 0;
+                    margin-bottom: 25px;
+                    padding-bottom: 25px;
+                    position:relative;
+                }
+                h3::before{
+                    position: absolute;
+                    content: "";
+                    width: 80px;
+                    height: 4px;
+                    background: #eb4d4b;
+                    bottom: 0;
+                    text-align: center;
+                    margin: 0 auto;
+                    left: 40%;
+                    right: auto;
+                }
+
+                span{
+                    color: red;
+                    letter-spacing: 7px;
+                    font-size: 1em;
+                }
+            }
+            .ishitestimonials-container, .container{
+                height: 100%;
+            }
+            
+        }
+    }
+
+
 
 
 }
 
-
-
+//Media queries
+@media screen and (max-width:821px){
+    .product-info
+    {
+        text-align: center;
+        margin: 0 20px;
+    }
+}
+@media screen and (max-width:400px) {
+    .product-info{
+        li{
+            display: inline;
+            width: 100%;
+        }
+    }
+}
 
 
 //Animations pure CSS
