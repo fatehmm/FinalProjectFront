@@ -121,9 +121,6 @@
 }
 .homepage .slider #slider-first-div div {
   position: absolute;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
 }
 .homepage .slider #slider-second-div {
   position: relative;
@@ -218,6 +215,40 @@
   top: 8px;
   left: 0;
 }
+
+.slider-first-div__text-div{
+  padding-left: 5%;
+  width: 45%;
+}
+
+.slider-first-div__text-div .txtmargin{
+  margin-top: 30%;
+  color: #fff;
+  font-size: 1.75em;
+}
+
+.slider-first-div__text-div h2{
+  color: #fff;
+  font-size: 4.5em;
+  font-weight: bold;
+}
+
+.slider-first-div__text-div button{
+  background-color: #eb4d4b;
+  color: #fff;
+  margin-top: 5%;
+  border: 0px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  height: 40px;
+  width: 130px;
+}
+
+.slider-first-div__text-div .txtmargin2{
+  color: #fff;
+  margin-top: 33%;
+}
+
 .homepage .product-info__infos__button button {
   background-color: #eb4d4b;
   padding: 10px 25px;
