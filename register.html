@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap cdn links (JS and CSS) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <!-- Owl CSS -->
+    <link rel="stylesheet" href="assets/plugins/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/plugins/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <!-- Main JS file link -->
+    <!-- <script src="assets/components/home/js/main.js" defer></script> -->
+    <script src="assets/components/register/js/register.js" defer></script>
+    <!-- Font Awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Main CSS file link -->
+    <link rel="stylesheet" href="assets/components/home/css/home.css">
+    <link rel="stylesheet" href="assets/components/register/css/register.css">
+    <!-- AOS CSS Link -->
+    <link rel="stylesheet" href="assets/plugins/aos-2/dist/aos.css">
+    <!-- Favicon for title-->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>&#128722</text></svg>">
+    <title>Your Store</title>
+</head>
+<body class="homepage">
+    <header class="homepage__header">
+        <!-- Navbar Start -->
+        <nav class="navbar navbar-expand-lg position-relative">
+            
+            <div class="navbar__logo">
+                <img src="https://demo.ishithemes.com/opencart/OPC100/OPC100L02/image/catalog/Logo.png" alt="logo">
+            </div>
+            <div class="navbar__links collapse navbar-collapse">
+                <ul class="navbar__links__ul navbar-nav">
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Drone</a>
+                        <div class="navbar__links__ul__container">
+                            <div id="indoor-toy">
+                                
+                                <ul>
+                                    <li><a href="">Parrot Mambo</a></li>
+                                    <li><a href="">Potensic A20W</a></li>
+                                    <li><a href="">Ryze Tello</a></li>
+                                </ul>
+                            </div>
+                            <div id="kids-entertainment">
+                                
+                                <ul>
+                                    <li><a href="">Parrot Mambo</a></li>
+                                    <li><a href="">Potensic A20W</a></li>
+                                    <li><a href="">Ryze Tello</a></li>
+                                </ul>
+                            </div>
+                            <div id="photography">
+                                
+                                <ul>
+                                    <li><a href="">Parrot Mambo</a></li>
+                                    <li><a href="">Potensic A20W</a></li>
+                                    <li><a href="">Ryze Tello</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Accesories</a>
+                        <div class="navbar__links__ul__container" id="accesories-div">
+                            <div id="ryze-tello">
+                                
+                                <ul>
+                                    <li><a href="">PowerVision</a></li>
+                                    <li><a href="">PowerVision A20W</a></li>
+                                    <li><a href="">Snaptain S&P500</a></li>
+                                </ul>
+                            </div>
+                            <div id="force-scoot">
+                                
+                                <ul>
+                                    <li><a href="">Parrot Mambo</a></li>
+                                    <li><a href="">Potensic A20W</a></li>
+                                    <li><a href="">Ryze Tello</a></li>
+                                </ul>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="collection.html" class="nav-link">Collection</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Components</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Outfits</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="navbar__icons">
+                <a href="" class="navbar__icons__link position-relative" id="magnifier-icon"><i class="fa-solid fa-magnifying-glass"></i>
+                
+                    <div id="search-bar" class="d-none align-items-center bg-light p-2 rounded position-absolute">
+                        <input type="text" class=" form-control d-inline bg-light border-0" placeholder="Search our catalog">
+                        <i class="fa-solid fa-magnifying-glass d-inline"></i>
+                    </div>
+                </a>
+                
+                <a href="" class="navbar__icons__link position-relative" id="account-icon"><i class="fa-solid fa-user"></i>
+                
+                    <div id="settings-bar" class="bg-light position-absolute d-none">
+                        <ul class="list-unstyled">
+                            <li><a href="register.html">Register</a></li>
+                            <li><a href="login.html">Login</a></li>
+                            <li><a href="#">Wish list</a></li>
+                        </ul>
+                        <div class="language-div">
+                            <ul class="language-ul list-unstyled">
+                                <li><a href="">🇬🇧 English</a></li>
+                                <li><a href="">🇸🇦 Arabic</a></li>
+                            </ul>
+                        </div>
+                        <div class="currency-div">
+                            <ul class="currency-ul list-unstyled">
+                                <li><a href="">💷 Pound</a></li>
+                                <li><a href="">💵 Dollar</a></li>
+                                <li><a href="">💶 Euro</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                
+                </a>
+                <a href="" class="navbar__icons__link" id="shopping-icon"><i class="fa-solid fa-cart-shopping"></i>
+                
+                <div id="cart-div__shopping" class="bg-light">
+
+                </div>
+                </a>  
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+        </nav>
+        <!-- Navbar End -->
+        <!-- Background Image Start -->
+        <div class="background-image">
+            <div class="background-image__ul">
+                <ul class="list-unstyled">
+                    <li><a href=""><i class="fa-solid fa-house"></i></a></li>
+                    <li><a href="">Account</a></li>
+                    <li><a href="">Register</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- Background Image End -->
+    </header>
+    <main>
+       <section class="register-form">
+            <div class="container">
+                <div class="register-warning">
+                    <p>If you already have an account with us, please login at the <a href="login.html">login page</a>.</p>
+                </div>
+            </div>
+            <div class="container w-75">
+                
+                <div class="container__personal-details">
+                    <h5>Your Personal Details</h5>
+                    <hr>
+                    <form action="">
+                        <label for="fn">First Name</label>
+                        <input type="text" placeholder="First Name" class="form form-control w-75" id="fn" required><br>
+
+                        <label for="ln">Last Name</label>
+                        <input type="text" placeholder="Last Name" class="form form-control w-75" id="ln" required><br>
+
+                        <label for="em">E-Mail</label>
+                        <input type="email" placeholder="E-Mail" class="form form-control w-75" id="em" required><br>
+
+                        <label for="ph">Telephone</label>
+                        <input type="tel" placeholder="Telephone" class="form form-control w-75" id="ph" required><br>
+                    </form>
+                </div>
+
+                <div class="container__personal-details">
+                    <h5>Your Password</h5>
+                    <hr>
+                    <form action="">
+                        <label for="pw">Password</label>
+                        <input type="password" placeholder="Password" class="form form-control w-75" id="pw" required><br>
+
+                        <label for="pwc">Password Confirm</label>
+                        <input type="password" placeholder="Confirm your Password" class="form form-control w-75" id="pwc" required><br>
+                    </form>
+                </div>
+                
+                <div class="container__radio">
+                    <h5>Newsletter</h5>
+                    <hr>
+                    <form action="">
+                        <span>Subscribe</span>
+                        <label for="yes">Yes</label>
+                        <input type="radio" name="yes" id="yes">
+                        <label for="no" style="margin-left:10px;">No</label>
+                        <input type="radio" name="no" id="no">
+                    </form>
+                </div>
+
+                <div class="container__privacy">
+                    <span>I have read and agree to the <a href="#">Privacy Policy</a></span>
+                    <input type="checkbox" name="agree" id="agree">
+                    <button>CONTINUE</button>
+                </div>
+            </div>
+       </section>
+       <section class="contact m-3">
+        <div class="container contact__wrapper">
+            <div class="row row-cols-lg-2 row-cols-1 m-0 w-100">
+                <div class="col-lg-6 col-12">
+                    <div id="contact-form">
+                        <div class="contact__wrapper__title">
+                            <span>CONTACT</span>
+                            <h3>Contact Us</h3>
+                        </div>
+                        <div class="contact__wrapper__form">
+                            <form action="">
+                                <div class="contact__wrapper__form__inputs">
+                                    <input type="text" placeholder="Name">
+                                    <input type="email" placeholder="Enter your email">
+                                </div>
+                                <textarea name="ta" id="tx" cols="30" rows="10" placeholder="Your Message"></textarea>
+                                <button type="button">SEND MESSAGE</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <div id="subscribe-form">
+                        <div class="contact__wrapper__title">
+                            <span>SUBSCRIBE</span>
+                            <h3>Newsletter</h3>
+                        </div>
+                        <div class="news-text">
+                            <div class="svg-news">
+                                <span class="news-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">          
+                                        <symbol id="news-icon" viewBox="0 0 500 500"><title>news-icon</title>
+                                          <path d="m494.2,488c0,0 0-225.8 0-301 0-3.1-3.9-7-7.7-9.9l-78.7-57.1v-63.1c0-6.2-5.2-10.4-10.4-10.4h-89.7l-45.7-33.3c-3.1-2.1-8.3-2.1-11.5,0l-45.7,33.3h-89.7c-6.2,0-10.4,5.2-10.4,10.4v62.4l-79.7,57.9c-4.7,2.9-7.7,6.7-7.7,9.9 0,75.7 0,303 0,303 0,5.9 4.7,10 9.6,10.4 0.3,0 0.5,0 0.8,0h456c6.7-0.1 10.5-5.3 10.5-12.5zm-19.8-282.3v263.6l-172.1-137.8 172.1-125.8zm-7.7-18.3l-58.9,42.9v-86.2l58.9,43.3zm-210.9-154.5l18.3,13.5h-36.7l18.4-13.5zm131.2,34.4v178.2l-131.2,95.6-131.2-95.6v-178.2h262.4zm-349.8,138.4l172.1,125.8-172.1,138.6v-264.4zm67.6,25.4l-60.4-44 60.4-43.9v87.9zm-48.9,249.5l170.1-136.9 23.5,17.2c4.5,3.4 7.9,3.4 12.5,0l23.5-17.2 171.1,136.9h-400.7z"></path><rect width="140.5" x="186.1" y="118.3" height="19.8"></rect><rect width="140.5" x="186.1" y="181.8" height="19.8"></rect><rect width="140.5" x="186.1" y="245.3" height="19.8"></rect>
+
+                                         </symbol> 
+                                    </svg>
+                                    <svg class="icon" viewBox="0 0 30 30"><use xlink:href="#news-icon" x="0%" y="0%"></use></svg>
+                                </span>
+                            </div>
+                            <h4>Join Our Newsletter</h4>
+                            <span>Enter your email address and recived news.</span>
+                            <input type="email" placeholder="Enter your email" class="position-relative">
+                                <button class="position-absolute">SUBSCRIBE</button>
+                            </input>
+                        </div>
+                        <div class="news-icons">
+                            <ul class="list-unstyled">
+                                <li><a href="">
+                                    <i class="fa-brands fa-facebook"></i>
+                                </a></li>
+                                <li><a href="">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a></li>
+                                <li><a href="">
+                                    <i class="fa-brands fa-youtube"></i>
+                                </a></li>
+                                <li><a href="">
+                                    <i class="fa-brands fa-google-plus"></i>
+                                </a></li>
+                                <li><a href="">
+                                    <i class="fa-brands fa-pinterest"></i>
+                                </a></li>
+                                <li><a href="">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+    <footer>
+        <ul class="list-unstyled">
+            <li>Brands </li>
+            <li>Gift Certificates </li>
+            <li>Affiliates </li>
+            <li>Specials </li>
+            <li>Site Map</li>
+        </ul>
+        <ul class="list-unstyled">
+            <li>My Account </li>
+            <li>Specials </li>
+            <li>Brands </li>
+            <li>Order History </li>
+            <li>Contact Us</li>
+        </ul>
+    </footer>
+    <!-- JS CDN -->
+<!-- jQuery cdn link -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<!-- Owl plugin link -->
+<script src="assets/plugins/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+<script src="assets/plugins/aos-2/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<!-- Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+</body>
+</html>

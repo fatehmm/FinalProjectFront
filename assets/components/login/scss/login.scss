@@ -1,0 +1,138 @@
+.background-image{
+    background: url(https://demo.ishithemes.com/opencart/OPC100/OPC100L02/image/catalog/breadcrumb.png);
+    background-attachment: fixed;
+    background-position: 47% 20%;
+    height: 150px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__ul{
+        ul{
+            li{
+                position: relative;
+                display: inline-block;
+                margin-right: 10px;
+                a{
+                   font-size: 15px !important;
+                   font-weight: normal;
+                }
+                a:hover{
+                    color: rgba(253, 37, 37, 0.581) !important;
+                }
+            }
+        }
+        ul > *:not(:first-child)::before{
+            content: "|";
+            font-size: 20px;
+            position: absolute;
+            top: -9%;
+            left: -15%;
+            font-weight: 300;
+        }
+    }
+}
+
+.fixed-navbar
+{
+    position: fixed !important;
+    background-color: white !important;
+    top: 0 !important;
+    animation-name: slide-nav !important;
+    animation-duration: 0.2s !important;
+    width: 100% !important;
+   
+    // overflow: hidden;
+}
+.register-form{
+    .register-warning{
+        margin: 20px auto;
+        padding: 20px 40px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(255, 244, 231);
+        border: 1px solid bisque;
+        p{
+            color: chocolate;
+        }
+    }
+    .container{
+        h5{
+            margin-top: 35px;
+        }
+        &__personal-details{
+            form{
+                label{
+                    display:inline-block;
+                    width: 200px !important;
+                }
+                input{
+                    display: inline-block;
+                    margin: 10px 0 ;
+                    border-radius: 0 !important;
+                }
+            }
+        }
+
+        &__radio{
+            form{
+                span{
+                    display:inline-block;
+                    width: 200px !important;
+                }
+            }
+        }
+
+        &__privacy{
+            float: right;
+            a{
+                color: black;
+                font-weight: 600;
+            }
+            a:hover{
+                color: red !important;
+            }
+            span{
+                color: gray;
+            }
+            button{
+                background-color: black;
+                color: white;
+                border: 0;
+                padding: 5px 15px;
+            }
+            button:hover{
+                background-color: red;
+                transition: 0.5s;
+            }
+        }
+        margin-bottom: 100px;
+    }
+
+    .contact__wrapper{
+       
+        #contact-form{
+            border: 0;
+        }
+        #subscribe-form{
+            border: 0 !important;
+            height: 100% !important;
+        }
+    }
+}
+
+
+
+// Keyframes 
+@keyframes slide-nav {
+    from 
+    {
+        top: -100%;
+    }
+    to 
+    {
+        top: 0;
+    }
+}

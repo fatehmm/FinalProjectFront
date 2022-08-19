@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Main CSS file link -->
     <link rel="stylesheet" href="assets/components/home/css/home.css">
+    <link rel="stylesheet" href="assets/components/home/css/home1.css">
     <!-- AOS CSS Link -->
     <link rel="stylesheet" href="assets/plugins/aos-2/dist/aos.css">
     <!-- Favicon for title-->
@@ -85,7 +86,7 @@
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link">Collection</a>
+                        <a href="collection.html" class="nav-link">Collection</a>
                     </li>
                     <li class="nav-item">
                         <a href="" class="nav-link">Components</a>
@@ -96,9 +97,44 @@
                 </ul>
             </div>
             <div class="navbar__icons">
-                <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
-                <a href=""><i class="fa-solid fa-user"></i></a>
-                <a href=""><i class="fa-solid fa-cart-shopping"></i></a>  
+                <a href="" class="navbar__icons__link position-relative" id="magnifier-icon"><i class="fa-solid fa-magnifying-glass"></i>
+                
+                    <div id="search-bar" class="d-flex align-items-center bg-light p-2 rounded position-absolute">
+                        <input type="text" class=" form-control d-inline bg-light border-0" placeholder="Search our catalog">
+                        <i class="fa-solid fa-magnifying-glass d-inline"></i>
+                    </div>
+                </a>
+                
+                <a href="" class="navbar__icons__link position-relative" id="account-icon"><i class="fa-solid fa-user"></i>
+                
+                    <div id="settings-bar" class="bg-light position-absolute">
+                        <ul class="list-unstyled">
+                            <li><a href="register.html">Register</a></li>
+                            <li><a href="login.html">Login</a></li>
+                            <li><a href="#">Wish list</a></li>
+                        </ul>
+                        <div class="language-div">
+                            <ul class="language-ul list-unstyled">
+                                <li><a href="">🇬🇧 English</a></li>
+                                <li><a href="">🇸🇦 Arabic</a></li>
+                            </ul>
+                        </div>
+                        <div class="currency-div">
+                            <ul class="currency-ul list-unstyled">
+                                <li><a href="">💷 Pound</a></li>
+                                <li><a href="">💵 Dollar</a></li>
+                                <li><a href="">💶 Euro</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                
+                </a>
+                <a href="" class="navbar__icons__link" id="shopping-icon"><i class="fa-solid fa-cart-shopping"></i>
+                
+                <div id="cart-div__shopping" class="bg-light">
+
+                </div>
+                </a>  
             </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -114,7 +150,7 @@
                     
                     <h2 >Fast Drone Delivery</h2> 
                 
-                    <p class="txtmargin2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus incidunt doloremque, dolore, aperiam quidem, libero ullam quos quibusdam laborum nobis exercitationem architecto sit est suscipit?</p>
+                    <p class="txtmargin2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus incidunt doloremque, dolore, aperiam quidem, libero ullam quos quibusdam laborum nobis</p>
                     <button>shop now</button>
                 </div>
             </div>
@@ -126,7 +162,7 @@
                     
                     <h2 >Fast Drone Delivery</h2> 
                 
-                    <p class="txtmargin2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus incidunt doloremque, dolore, aperiam quidem, libero ullam quos quibusdam laborum nobis exercitationem architecto sit est suscipit?</p>
+                    <p class="txtmargin2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus incidunt doloremque, dolore, aperiam quidem, libero ullam quos quibusdam laborum nobis</p>
                     <button>shop now</button>
                 </div>
             </div>
@@ -272,26 +308,305 @@
 
 
         <section class="fabulous-products">
+            <div class="products-title">
+                <span>THE LATEST</span>
+                <h3>Fabulous Products</h3>
+            </div>
+            <div class="container">
+                <div class="row row-cols-lg-3 row-cols-md-2 row-cols-1">
 
+                    <!-- first start -->
+                    <div class="col-lg-4 col-md-6 col-12 product">
+                        <div class="image">
+                            <img src="https://demo.ishithemes.com/opencart/OPC100/OPC100L02/image/cache/catalog/productsimage/1-1000x1000.jpg" alt="">
+                            <img class="last-image" src="https://demo.ishithemes.com/opencart/OPC100/OPC100L02/image/cache/catalog/productsimage/10-370x370.jpg" alt="">
+                            <a href=""><i class="fa-regular fa-eye"></i></a>
+                            <a href=""><i class="fa-regular fa-heart"></i></a>
+                            <a href=""><i class="fa-solid fa-code-compare"></i></a>
+                        </div>
+                        <div class="text">
+                            <h4>Apple Cinema 30"</h4>
+                            <span>122</span>
+                        </div>
+                        <button class="cart">
+                            ADD TO CART
+                        </button>
+                    </div>
+                    <!-- first end -->
+    
+                    <div class="col-lg-4 col-md-6 col-12 product">
+                        <div class="image">
+                            <img src="https://demo.ishithemes.com/opencart/OPC100/OPC100L02/image/cache/catalog/productsimage/1-1000x1000.jpg" alt="">
+                            <img class="last-image" src="https://demo.ishithemes.com/opencart/OPC100/OPC100L02/image/cache/catalog/productsimage/10-370x370.jpg" alt="">
+                            <a href=""><i class="fa-regular fa-eye"></i></a>
+                            <a href=""><i class="fa-regular fa-heart"></i></a>
+                            <a href=""><i class="fa-solid fa-code-compare"></i></a>
+                        </div>
+                        <div class="text">
+                            <h4>HP ALSKLAK"</h4>
+                            <span>122</span>
+                        </div>
+                        <button class="cart">
+                            ADD TO CART
+                        </button>
+                    </div>
+    
+                    <div class="col-lg-4 col-md-6 col-12 product">
+                        <div class="image">
+                            <img src="https://demo.ishithemes.com/opencart/OPC100/OPC100L02/image/cache/catalog/productsimage/1-1000x1000.jpg" alt="">
+                            <img class="last-image" src="https://demo.ishithemes.com/opencart/OPC100/OPC100L02/image/cache/catalog/productsimage/10-370x370.jpg" alt="">
+                            <a href=""><i class="fa-regular fa-eye"></i></a>
+                            <a href=""><i class="fa-regular fa-heart"></i></a>
+                            <a href=""><i class="fa-solid fa-code-compare"></i></a>
+                        </div>
+                        <div class="text">
+                            <h4>HTC Touch 30"</h4>
+                            <span>122</span>
+                        </div>
+                        <button class="cart">
+                            ADD TO CART
+                        </button>
+                    </div>
+    
+                    <div class="col-lg-4 col-md-6 col-12 product">
+                        <div class="image">
+                            <img src="https://demo.ishithemes.com/opencart/OPC100/OPC100L02/image/cache/catalog/productsimage/1-1000x1000.jpg" alt="">
+                            <img class="last-image" src="https://demo.ishithemes.com/opencart/OPC100/OPC100L02/image/cache/catalog/productsimage/10-370x370.jpg" alt="">
+                            <a href=""><i class="fa-regular fa-eye"></i></a>
+                            <a href=""><i class="fa-regular fa-heart"></i></a>
+                            <a href=""><i class="fa-solid fa-code-compare"></i></a>
+                        </div>
+                        <div class="text">
+                            <h4>iPod Shuffle</h4>
+                            <span>122</span>
+                        </div>
+                        <button class="cart">
+                            ADD TO CART
+                        </button>
+                    </div>
+    
+                    <div class="col-lg-4 col-md-6 col-12 product">
+                        <div class="image">
+                            <img src="https://demo.ishithemes.com/opencart/OPC100/OPC100L02/image/cache/catalog/productsimage/1-1000x1000.jpg" alt="">
+                            <img class="last-image" src="https://demo.ishithemes.com/opencart/OPC100/OPC100L02/image/cache/catalog/productsimage/10-370x370.jpg" alt="">
+                            <a href=""><i class="fa-regular fa-eye"></i></a>
+                            <a href=""><i class="fa-regular fa-heart"></i></a>
+                            <a href=""><i class="fa-solid fa-code-compare"></i></a>
+                        </div>
+                        <div class="text">
+                            <h4>Canon EOS 5D</h4>
+                            <span>122</span>
+                        </div>
+                        <button class="cart">
+                            ADD TO CART
+                        </button>
+                    </div>
+    
+                    <div class="col-lg-4 col-md-6 col-12 product">
+                        <div class="image">
+                            <img src="https://demo.ishithemes.com/opencart/OPC100/OPC100L02/image/cache/catalog/productsimage/1-1000x1000.jpg" alt="">
+                            <img class="last-image" src="https://demo.ishithemes.com/opencart/OPC100/OPC100L02/image/cache/catalog/productsimage/10-370x370.jpg" alt="">
+                            <a href=""><i class="fa-regular fa-eye"></i></a>
+                            <a href=""><i class="fa-regular fa-heart"></i></a>
+                            <a href=""><i class="fa-solid fa-code-compare"></i></a>
+                        </div>
+                        <div class="text">
+                            <h4>iPod Nano"</h4>
+                            <span>122</span>
+                        </div>
+                        <button class="cart">
+                            ADD TO CART
+                        </button>
+                    </div>
+    
+                    
+                </div>
+            </div>
+           
         </section>
 
 
         <section class="faqs">
-            <div class="container">
+            <div class="container faqs__container">
                 <div class="faqs__container__title">
                     <span>THE PRODUCTS</span>
                     <h3>FAQ's</h3>
                 </div>
                 <div class="faqs__container__accordion">
+                    <div class="accordion">
+                        <!-- First Accordion Start -->
+                        <div class="accordion-section">
+                            <a class="accordion-section-title" href="#accordion-1">01  How to use Drone Product?<span class="arrow"></span></a>
+                            <div id="accordion-1" class="accordion-section-content">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+                            </div>
+                        </div>
+                        <!-- First Accordion End -->
+                        <!-- Second Accordion Start -->
+                        <div class="accordion-section">
+                            <a class="accordion-section-title" href="#accordion-2">02  What is a Lorem Ipsum generator?<span class="arrow"></span></a>
+                            <div id="accordion-2" class="accordion-section-content">
+                                <p>Derived from Latin dolorem ipsum (“pain itself”), Lorem Ipsum is filler text used by publishers and graphic designers used to demonstrate graphic elements. Let's say you're drafting the ultimate content marketing strategy.</p>
+                            </div>
+                        </div>
+                        <!-- Second Accordion End -->
+                        <!-- Third Accordion Start -->
+                        <div class="accordion-section">
+                            <a class="accordion-section-title" href="#accordion-3">03  Ut enim ad minim veniam quis nostrud?<span class="arrow"></span></a>
+                            <div id="accordion-3" class="accordion-section-content">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+                            </div>
+                        </div>
+                        <!-- Third Accordion End -->
 
+                        <div class="accordion-section">
+                            <a class="accordion-section-title" href="#accordion-3">04  who is thought to have scrambled parts of Cicero?<span class="arrow"></span></a>
+                            <div id="accordion-3" class="accordion-section-content">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+                            </div>
+                        </div>
+
+                        <div class="accordion-section">
+                            <a class="accordion-section-title" href="#accordion-3">05  What is the use of Lorem Ipsum?<span class="arrow"></span></a>
+                            <div id="accordion-3" class="accordion-section-content">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+                            </div>
+                        </div>
+
+                        <div class="accordion-section">
+                            <a class="accordion-section-title" href="#accordion-3">06  Minim veniam quis enim?<span class="arrow"></span></a>
+                            <div id="accordion-3" class="accordion-section-content">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+                            </div>
+                        </div>
+
+                        <div class="accordion-section">
+                            <a class="accordion-section-title" href="#accordion-3">07  How do I get Lorem Ipsum text in?<span class="arrow"></span></a>
+                            <div id="accordion-3" class="accordion-section-content">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
 
+        <section class="partners">
+            <div class="container partners__wrapper">
+                <div class="owl-carousel owl-theme" id="partners-carousel">
+                    <div class="item">
+                        <img src="https://demo.ishithemes.com/opencart/OPC100/OPC100L02/image/cache/catalog/brand/Brand-Logo-1-200x60.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="https://demo.ishithemes.com/opencart/OPC100/OPC100L02/image/cache/catalog/brand/Brand-Logo-2-200x60.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="https://demo.ishithemes.com/opencart/OPC100/OPC100L02/image/cache/catalog/brand/Brand-Logo-3-200x60.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="https://demo.ishithemes.com/opencart/OPC100/OPC100L02/image/cache/catalog/brand/Brand-Logo-4-200x60.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="https://demo.ishithemes.com/opencart/OPC100/OPC100L02/image/cache/catalog/brand/Brand-Logo-5-200x60.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <section class="contact">
+            <div class="container contact__wrapper">
+                <div class="row row-cols-lg-2 row-cols-1">
+                    <div class="col-lg-6 col-12">
+                        <div id="contact-form">
+                            <div class="contact__wrapper__title">
+                                <span>CONTACT</span>
+                                <h3>Contact Us</h3>
+                            </div>
+                            <div class="contact__wrapper__form">
+                                <form action="">
+                                    <div class="contact__wrapper__form__inputs">
+                                        <input type="text" placeholder="Name">
+                                        <input type="email" placeholder="Enter your email">
+                                    </div>
+                                    <textarea name="ta" id="tx" cols="30" rows="10" placeholder="Your Message"></textarea>
+                                    <button type="button">SEND MESSAGE</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <div id="subscribe-form">
+                            <div class="contact__wrapper__title">
+                                <span>SUBSCRIBE</span>
+                                <h3>Newsletter</h3>
+                            </div>
+                            <div class="news-text">
+                                <div class="svg-news">
+                                    <span class="news-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">          
+                                            <symbol id="news-icon" viewBox="0 0 500 500"><title>news-icon</title>
+                                              <path d="m494.2,488c0,0 0-225.8 0-301 0-3.1-3.9-7-7.7-9.9l-78.7-57.1v-63.1c0-6.2-5.2-10.4-10.4-10.4h-89.7l-45.7-33.3c-3.1-2.1-8.3-2.1-11.5,0l-45.7,33.3h-89.7c-6.2,0-10.4,5.2-10.4,10.4v62.4l-79.7,57.9c-4.7,2.9-7.7,6.7-7.7,9.9 0,75.7 0,303 0,303 0,5.9 4.7,10 9.6,10.4 0.3,0 0.5,0 0.8,0h456c6.7-0.1 10.5-5.3 10.5-12.5zm-19.8-282.3v263.6l-172.1-137.8 172.1-125.8zm-7.7-18.3l-58.9,42.9v-86.2l58.9,43.3zm-210.9-154.5l18.3,13.5h-36.7l18.4-13.5zm131.2,34.4v178.2l-131.2,95.6-131.2-95.6v-178.2h262.4zm-349.8,138.4l172.1,125.8-172.1,138.6v-264.4zm67.6,25.4l-60.4-44 60.4-43.9v87.9zm-48.9,249.5l170.1-136.9 23.5,17.2c4.5,3.4 7.9,3.4 12.5,0l23.5-17.2 171.1,136.9h-400.7z"></path><rect width="140.5" x="186.1" y="118.3" height="19.8"></rect><rect width="140.5" x="186.1" y="181.8" height="19.8"></rect><rect width="140.5" x="186.1" y="245.3" height="19.8"></rect>
+    
+                                             </symbol> 
+                                        </svg>
+                                        <svg class="icon" viewBox="0 0 30 30"><use xlink:href="#news-icon" x="0%" y="0%"></use></svg>
+                                    </span>
+                                </div>
+                                <h4>Join Our Newsletter</h4>
+                                <span>Enter your email address and recived news.</span>
+                                <input type="email" placeholder="Enter your email" class="position-relative">
+                                    <button class="position-absolute">SUBSCRIBE</button>
+                                </input>
+                            </div>
+                            <div class="news-icons">
+                                <ul class="list-unstyled">
+                                    <li><a href="">
+                                        <i class="fa-brands fa-facebook"></i>
+                                    </a></li>
+                                    <li><a href="">
+                                        <i class="fa-brands fa-twitter"></i>
+                                    </a></li>
+                                    <li><a href="">
+                                        <i class="fa-brands fa-youtube"></i>
+                                    </a></li>
+                                    <li><a href="">
+                                        <i class="fa-brands fa-google-plus"></i>
+                                    </a></li>
+                                    <li><a href="">
+                                        <i class="fa-brands fa-pinterest"></i>
+                                    </a></li>
+                                    <li><a href="">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a></li>
+                                </ul>
+                            </div>
+                        </div>
 
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
     </main>
+
+    <footer>
+        <ul class="list-unstyled">
+            <li>Brands </li>
+            <li>Gift Certificates </li>
+            <li>Affiliates </li>
+            <li>Specials </li>
+            <li>Site Map</li>
+        </ul>
+        <ul class="list-unstyled">
+            <li>My Account </li>
+            <li>Specials </li>
+            <li>Brands </li>
+            <li>Order History </li>
+            <li>Contact Us</li>
+        </ul>
+    </footer>
    
 
 <!-- JS CDN -->
