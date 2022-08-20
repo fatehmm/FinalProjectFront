@@ -40,67 +40,41 @@
   width: 100% !important;
 }
 
-.register-form .register-warning {
-  margin: 20px auto;
-  padding: 20px 40px;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: rgb(255, 244, 231);
-  border: 1px solid bisque;
+.customer-type .wrapper-new {
+  margin: 7%;
+  padding: 5%;
+  border: 1px solid gainsboro;
 }
-.register-form .register-warning p {
-  color: chocolate;
-}
-.register-form .container {
-  margin-bottom: 100px;
-}
-.register-form .container h5 {
-  margin-top: 35px;
-}
-.register-form .container__personal-details form label {
-  display: inline-block;
-  width: 200px !important;
-}
-.register-form .container__personal-details form input {
-  display: inline-block;
-  margin: 10px 0;
-  border-radius: 0 !important;
-}
-.register-form .container__radio form span {
-  display: inline-block;
-  width: 200px !important;
-}
-.register-form .container__privacy {
-  float: right;
-}
-.register-form .container__privacy a {
-  color: black;
-  font-weight: 600;
-}
-.register-form .container__privacy a:hover {
-  color: red !important;
-}
-.register-form .container__privacy span {
-  color: gray;
-}
-.register-form .container__privacy button {
+.customer-type .wrapper-new button {
   background-color: black;
-  color: white;
   border: 0;
-  padding: 5px 15px;
+  color: white;
+  padding: 5px 10px;
 }
-.register-form .container__privacy button:hover {
-  background-color: red;
+.customer-type .wrapper-new button:hover {
+  background-color: rgba(255, 76, 76, 0.887);
   transition: 0.5s;
 }
-.register-form .contact__wrapper #contact-form {
-  border: 0;
+.customer-type .wrapper-returning {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 7%;
+  padding: 5%;
+  border: 1px solid gainsboro;
 }
-.register-form .contact__wrapper #subscribe-form {
-  border: 0 !important;
-  height: 100% !important;
+.customer-type .wrapper-returning > * {
+  margin: 5px !important;
+}
+.customer-type .wrapper-returning button {
+  background-color: black;
+  border: 0;
+  color: white;
+  padding: 5px 10px;
+}
+.customer-type .wrapper-returning button:hover {
+  background-color: rgba(255, 76, 76, 0.887);
+  transition: 0.5s;
 }
 
 @-webkit-keyframes slide-nav {

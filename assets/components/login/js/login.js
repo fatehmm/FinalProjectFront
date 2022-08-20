@@ -5,15 +5,12 @@ $("#magnifier-icon").click(function(e){
     if ($("#search-bar")[0].className.includes("d-none"))
     {
         $("#search-bar")[0].classList.remove("d-none")
-        $("#search-bar")[0].classList.add("d-block")
-
-        $("#settings-bar")[0].classList.add("d-none")
-        $("#settings-bar")[0].classList.remove("d-block")
+        $("#search-bar")[0].classList.add("d-flex")
     }
     else
     {
         $("#search-bar")[0].classList.add("d-none")
-        $("#search-bar")[0].classList.remove("d-block")
+        $("#search-bar")[0].classList.remove("d-flex")
     }
     
 })
@@ -24,8 +21,6 @@ $("#account-icon").click(function(e){
         $("#settings-bar")[0].classList.remove("d-none")
         $("#settings-bar")[0].classList.add("d-block")
 
-        $("#search-bar")[0].classList.add("d-none")
-        $("#search-bar")[0].classList.remove("d-block")
     }
     else
     {

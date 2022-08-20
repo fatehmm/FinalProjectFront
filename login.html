@@ -30,7 +30,9 @@
         <nav class="navbar navbar-expand-lg position-relative">
             
             <div class="navbar__logo">
-                <img src="https://demo.ishithemes.com/opencart/OPC100/OPC100L02/image/catalog/Logo.png" alt="logo">
+                <a href="index.html">
+                    <img src="https://demo.ishithemes.com/opencart/OPC100/OPC100L02/image/catalog/Logo.png" alt="logo">
+                </a>
             </div>
             <div class="navbar__links collapse navbar-collapse">
                 <ul class="navbar__links__ul navbar-nav">
@@ -148,70 +150,47 @@
                 <ul class="list-unstyled">
                     <li><a href=""><i class="fa-solid fa-house"></i></a></li>
                     <li><a href="">Account</a></li>
-                    <li><a href="">Register</a></li>
+                    <li><a href="">Login</a></li>
                 </ul>
             </div>
         </div>
         <!-- Background Image End -->
     </header>
     <main>
-       <section class="register-form">
+    
+        <section class="customer-type">
             <div class="container">
-                <div class="register-warning">
-                    <p>If you already have an account with us, please login at the <a href="login.html">login page</a>.</p>
+                <div class="row row-cols-lg-2 row-cols-1">
+                    <div class="col-lg-6 col-12">
+                        <div class="wrapper-new">
+                            <h5>New Customer</h5>
+                            <h6>Register Account</h6>
+                            <p>By creating an account you will be able to shop faster, be up to date on an order's status, and keep track of the orders you have previously made.</p>
+                            <button>CONTINUE</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <div class="wrapper-returning">
+                            <h5>Returning Customer</h5>
+                            <h6>I am a returning customer</h6>
+                            <form action="">
+                                <div class="email">
+                                    <label for="email">E-Mail Address</label>
+                                <input type="text" placeholder="E-Mail Address" id="email" name="email">
+                                </div>
+
+                                <div class="pwd">
+                                    <label for="pwd">Password</label>
+                                <input type="password" placeholder="Password" id="pwd" name="pwd">
+                                </div>
+                                <button>Login</button>
+                            </form>
+                            
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="container w-75">
-                
-                <div class="container__personal-details">
-                    <h5>Your Personal Details</h5>
-                    <hr>
-                    <form action="">
-                        <label for="fn">First Name</label>
-                        <input type="text" placeholder="First Name" class="form form-control w-75" id="fn" required><br>
-
-                        <label for="ln">Last Name</label>
-                        <input type="text" placeholder="Last Name" class="form form-control w-75" id="ln" required><br>
-
-                        <label for="em">E-Mail</label>
-                        <input type="email" placeholder="E-Mail" class="form form-control w-75" id="em" required><br>
-
-                        <label for="ph">Telephone</label>
-                        <input type="tel" placeholder="Telephone" class="form form-control w-75" id="ph" required><br>
-                    </form>
-                </div>
-
-                <div class="container__personal-details">
-                    <h5>Your Password</h5>
-                    <hr>
-                    <form action="">
-                        <label for="pw">Password</label>
-                        <input type="password" placeholder="Password" class="form form-control w-75" id="pw" required><br>
-
-                        <label for="pwc">Password Confirm</label>
-                        <input type="password" placeholder="Confirm your Password" class="form form-control w-75" id="pwc" required><br>
-                    </form>
-                </div>
-                
-                <div class="container__radio">
-                    <h5>Newsletter</h5>
-                    <hr>
-                    <form action="">
-                        <span>Subscribe</span>
-                        <label for="yes">Yes</label>
-                        <input type="radio" name="yes" id="yes">
-                        <label for="no" style="margin-left:10px;">No</label>
-                        <input type="radio" name="no" id="no">
-                    </form>
-                </div>
-
-                <div class="container__privacy">
-                    <span>I have read and agree to the <a href="#">Privacy Policy</a></span>
-                    <input type="checkbox" name="agree" id="agree">
-                    <button>CONTINUE</button>
-                </div>
-            </div>
-       </section>
+        </section>
        <section class="contact m-3">
         <div class="container contact__wrapper">
             <div class="row row-cols-lg-2 row-cols-1 m-0 w-100">
