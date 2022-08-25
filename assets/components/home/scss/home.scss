@@ -889,3 +889,35 @@
    
     // overflow: hidden;
 }}
+
+.title-text{
+    text-align: center;
+                    margin: 80px 0 0 0 ;
+                    h3{
+                        font-size: 40px;
+                        line-height: 40px;
+                        letter-spacing: 0;
+                        font-weight: 600;
+                        margin: 10px 0;
+                        margin-bottom: 25px;
+                        padding-bottom: 25px;
+                        position:relative;
+                    }
+                    h3::before{
+                        position: absolute;
+                        content: "";
+                        width: 80px;
+                        height: 4px;
+                        background: #eb4d4b;
+                        bottom: 0;
+                        text-align: center;
+                        margin: 0 auto;
+                        left: 43%;
+                        right: auto;
+                    }
+                    span{
+                        color: red;
+                        letter-spacing: 7px;
+                        font-size: 16px;
+                }
+}

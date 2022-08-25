@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap cdn links (JS and CSS) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <!-- Owl CSS -->
+    <link rel="stylesheet" href="assets/plugins/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/plugins/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <!-- Main JS file link -->
+    <!-- <script src="assets/components/home/js/main.js" defer></script> -->
+    <script src="assets/components/register/js/register.js" defer></script>
+    <!-- Font Awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Main CSS file link -->
+    <link rel="stylesheet" href="assets/components/register/css/register.css">
+    <link rel="stylesheet" href="assets/components/product/css/product.css">
+    <link rel="stylesheet" href="assets/components/home/css/home.css">
+
+    <!-- AOS CSS Link -->
+    <link rel="stylesheet" href="assets/plugins/aos-2/dist/aos.css">
+    <!-- Favicon for title-->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>&#128722</text></svg>">
+    <title>Your Store</title>
+</head>
+<body class="homepage">
+    <header class="homepage__header">
+        <!-- Navbar Start -->
+        <nav class="navbar navbar-expand-lg position-relative">
+            
+            <div class="navbar__logo">
+                <a href="index.html">
+                    <img src="https://demo.ishithemes.com/opencart/OPC100/OPC100L02/image/catalog/Logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="navbar__links collapse navbar-collapse">
+                <ul class="navbar__links__ul navbar-nav">
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Drone</a>
+                        <div class="navbar__links__ul__container">
+                            <div id="indoor-toy">
+                                
+                                <ul>
+                                    <li><a href="">Parrot Mambo</a></li>
+                                    <li><a href="">Potensic A20W</a></li>
+                                    <li><a href="">Ryze Tello</a></li>
+                                </ul>
+                            </div>
+                            <div id="kids-entertainment">
+                                
+                                <ul>
+                                    <li><a href="">Parrot Mambo</a></li>
+                                    <li><a href="">Potensic A20W</a></li>
+                                    <li><a href="">Ryze Tello</a></li>
+                                </ul>
+                            </div>
+                            <div id="photography">
+                                
+                                <ul>
+                                    <li><a href="">Parrot Mambo</a></li>
+                                    <li><a href="">Potensic A20W</a></li>
+                                    <li><a href="">Ryze Tello</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Accesories</a>
+                        <div class="navbar__links__ul__container" id="accesories-div">
+                            <div id="ryze-tello">
+                                
+                                <ul>
+                                    <li><a href="">PowerVision</a></li>
+                                    <li><a href="">PowerVision A20W</a></li>
+                                    <li><a href="">Snaptain S&P500</a></li>
+                                </ul>
+                            </div>
+                            <div id="force-scoot">
+                                
+                                <ul>
+                                    <li><a href="">Parrot Mambo</a></li>
+                                    <li><a href="">Potensic A20W</a></li>
+                                    <li><a href="">Ryze Tello</a></li>
+                                </ul>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="collection.html" class="nav-link">Collection</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Components</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Outfits</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="navbar__icons">
+                <a href="" class="navbar__icons__link position-relative" id="magnifier-icon"><i class="fa-solid fa-magnifying-glass"></i>
+                
+                    <div id="search-bar" class="d-none align-items-center bg-light p-2 rounded position-absolute">
+                        <input type="text" class=" form-control d-inline bg-light border-0" placeholder="Search our catalog">
+                        <i class="fa-solid fa-magnifying-glass d-inline"></i>
+                    </div>
+                </a>
+                
+                <a href="" class="navbar__icons__link position-relative" id="account-icon"><i class="fa-solid fa-user"></i>
+                
+                    <div id="settings-bar" class="bg-light position-absolute d-none">
+                        <ul class="list-unstyled">
+                            <li><a href="register.html">Register</a></li>
+                            <li><a href="login.html">Login</a></li>
+                            <li><a href="#">Wish list</a></li>
+                        </ul>
+                        <div class="language-div">
+                            <ul class="language-ul list-unstyled">
+                                <li><a href="">🇬🇧 English</a></li>
+                                <li><a href="">🇸🇦 Arabic</a></li>
+                            </ul>
+                        </div>
+                        <div class="currency-div">
+                            <ul class="currency-ul list-unstyled">
+                                <li><a href="">💷 Pound</a></li>
+                                <li><a href="">💵 Dollar</a></li>
+                                <li><a href="">💶 Euro</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                
+                </a>
+                <a href="" class="navbar__icons__link" id="shopping-icon"><i class="fa-solid fa-cart-shopping"></i><span id="BASKET_COUNT"></span>
+                
+                <div id="cart-div__shopping" class="bg-light">
+
+                </div>
+                </a>  
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+        </nav>
+        <!-- Navbar End -->
+        <!-- Background Image Start -->
+        <div class="background-image">
+            <div class="background-image__ul">
+                <ul class="list-unstyled">
+                    <li><a href=""><i class="fa-solid fa-house"></i></a></li>
+                    <li><a href="">HTC Touch HD</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+        <!-- Background Image End -->
+    </header>
+    <main>
+        <div class="container">
+            <div class="row row-cols-lg-2 row-cols-1">
+                <div class="col-lg-6 col-12 description-product">
+                    <div class="image-product">
+                        <img src="https://demo.ishithemes.com/opencart/OPC100/OPC100L02/image/cache/catalog/productsimage/12-1000x1000.jpg" alt="">
+                    </div>
+                    <div class="carousel">
+                        <div class="owl-carousel owl-theme">
+                            <div class="item"><img src="https://demo.ishithemes.com/opencart/OPC100/OPC100L02/image/cache/catalog/productsimage/15-1000x1000.jpg" alt=""></div>
+                            <div class="item"><img src="https://demo.ishithemes.com/opencart/OPC100/OPC100L02/image/cache/catalog/productsimage/14-1000x1000.jpg" alt=""></div>
+                            <div class="item"><img src="https://demo.ishithemes.com/opencart/OPC100/OPC100L02/image/cache/catalog/productsimage/13-1000x1000.jpg" alt=""></div>
+                            <div class="item"><img src="https://demo.ishithemes.com/opencart/OPC100/OPC100L02/image/cache/catalog/productsimage/16-1000x1000.jpg" alt=""></div>
+                            <div class="item"><img src="https://demo.ishithemes.com/opencart/OPC100/OPC100L02/image/cache/catalog/productsimage/17-1000x1000.jpg" alt=""></div>
+                            </div>
+                    </div>
+                    <div class="desc-prod">
+                        <span class="product-line"></span>
+                        <h5>Description</h5>
+                        <p>HTC Touch - in High Definition. Watch music videos and streaming content in awe-inspiring high definition clarity for a mobile experience you never thought possible. Seductively sleek, the HTC Touch HD provides the next generation of mobile functionality, all at a simple touch. Fully integrated with Windows Mobile Professional 6.1, ultrafast 3.5G, GPS, 5MP camera, plus lots more - all delivered on a breathtakingly crisp 3.8" WVGA touchscreen - you can take control of your mobile world with the HTC Touch HD.</p>
+
+                        <h5>Features</h5>
+                        <ul>
+                            <li>Processor Qualcomm® MSM 7201A™ 528 MHz</li>
+                            <li>Windows Mobile® 6.1 Professional Operating System</li>
+                            <li>Dimensions: 115 mm x 62.8 mm x 12 mm / 146.4 grams</li>
+                            <li>Memory: 512 MB ROM, 288 MB RAM</li>
+                            <li>Dimensions: 115 mm x 62.8 mm x 12 mm / 146.4 grams</li>
+                        </ul>
+                    </div>
+                    <div class="review-prod" id="review">
+                        <form action="" class="review-form">
+                            <h5>Write a review</h5>
+                            <label for="">Your Name</label>
+                            <input type="text">
+
+                            <label for="">Your Review</label>
+                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                            <span><span style="color:red;">Note:</span> HTML is not translated!</span>
+
+                            <div class="rating-review">
+                                <label for="">Rating</label>
+                                <span>Bad</span>
+                                <input type="radio" name="ok">
+                                <input type="radio" name="ok">
+                                <input type="radio" name="ok">
+                                <input type="radio" name="ok">
+                                <input type="radio" name="ok">
+                                <span>Good</span>
+                            </div>
+                            <button class="custom-button" style="width: 30%; align-self: flex-end;">Continue</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12 cart-product">
+                    <h4>HTC Touch HD</h4>
+                    <div class="sharing-prod">
+                        
+                        <span>Share</span>
+                        <button class="facebook-fav-button">
+                            👍
+                            Like 0
+                        </button>
+
+                        <button class="twitter-fav-button">
+                            <i class="fab fa-twitter"></i>
+                            Tweet 
+                        </button>
+                    </div>
+
+                    <div class="review-stars">
+                        <i class="fa-solid fa-star yellow"></i>
+                        <i class="fa-solid fa-star yellow"></i>
+                        <i class="fa-solid fa-star yellow"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star" id="last-star"></i>
+
+                        <a href="#review"><i class="fa-solid fa-pencil"></i> <span>Write a review</span></a>
+                    </div>
+                    <div class="pricing-prod">
+                        $<p>122.00</p>
+                        <p>Ex Tax: $100.00</p>
+                        <p>Price in reward points: 200</p>
+                    </div>
+                    <div class="cart-add">
+                        <span>Qty</span>
+                        <input type="number" value="1">
+                        <button class="custom-button text-uppercase">Add to cart</button>
+                        <button class="custom-button-reverse"><i class="fa-regular fa-heart"></i></button>
+                        <button class="custom-button-reverse"><i class="fa-regular fa-not-equal"></i></button>
+                    </div>
+                    <div class="specs">
+                        <div class="row row-cols-2">
+                            <div class="col-6">
+                                <div>
+                                    <p class="brand-title">Brand</p>
+                                    <p>HTC</p>
+                                </div>
+                            </div>
+
+                            <div class="col-6">
+                                <div>
+                                    <p class="brand-title">PRODUCT CODE</p>
+                                    <p>Product 1</p>
+                                </div>
+                            </div>
+
+                            <div class="col-6">
+                                <div>
+                                    <p class="brand-title">REWARD POINTS</p>
+                                    <p>400</p>
+                                </div>
+                            </div>
+
+                            <div class="col-6">
+                                <div>
+                                    <p class="brand-title">AVAILABILITY</p>
+                                    <p>In Stock</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fabulous-products">
+            <div class="container">
+                <div class="title-text">
+                    <span>THE PRODUCTS</span>
+                    <h3>Related Products</h3>
+                </div>
+                <div class="owl-carousel owl-theme">
+                    <div class="item product">
+                        <a href="product.html">
+                            <div class="image">
+                                <img src="https://demo.ishithemes.com/opencart/OPC100/OPC100L02/image/cache/catalog/productsimage/1-1000x1000.jpg" alt="">
+                                <img class="last-image" src="https://demo.ishithemes.com/opencart/OPC100/OPC100L02/image/cache/catalog/productsimage/10-370x370.jpg" alt="">
+                                <a href=""><i class="fa-regular fa-eye"></i></a>
+                                <a href=""><i class="fa-regular fa-heart"></i></a>
+                                <a href=""><i class="fa-solid fa-code-compare"></i></a>
+                            </div>
+                            <div class="text">
+                                <h4>Apple Cinema 30"</h4>
+                                <span>122</span>
+                            </div>
+                            <button class="cart">
+                                ADD TO CART
+                            </button>
+                        </a>
+                    </div>
+                    <div class="item product">
+                        <a href="product.html">
+                            <div class="image">
+                                <img src="https://demo.ishithemes.com/opencart/OPC100/OPC100L02/image/cache/catalog/productsimage/1-1000x1000.jpg" alt="">
+                                <img class="last-image" src="https://demo.ishithemes.com/opencart/OPC100/OPC100L02/image/cache/catalog/productsimage/10-370x370.jpg" alt="">
+                                <a href=""><i class="fa-regular fa-eye"></i></a>
+                                <a href=""><i class="fa-regular fa-heart"></i></a>
+                                <a href=""><i class="fa-solid fa-code-compare"></i></a>
+                            </div>
+                            <div class="text">
+                                <h4>HP ALSKLAK"</h4>
+                                <span>122</span>
+                            </div>
+                            <button class="cart">
+                                ADD TO CART
+                            </button>
+                        </a>
+                    </div>
+                    <div class="item product">
+                        <a href="product.html">
+                            <div class="image">
+                                <img src="https://demo.ishithemes.com/opencart/OPC100/OPC100L02/image/cache/catalog/productsimage/1-1000x1000.jpg" alt="">
+                                <img class="last-image" src="https://demo.ishithemes.com/opencart/OPC100/OPC100L02/image/cache/catalog/productsimage/10-370x370.jpg" alt="">
+                                <a href=""><i class="fa-regular fa-eye"></i></a>
+                                <a href=""><i class="fa-regular fa-heart"></i></a>
+                                <a href=""><i class="fa-solid fa-code-compare"></i></a>
+                            </div>
+                            <div class="text">
+                                <h4>HTC Touch 30"</h4>
+                                <span>122</span>
+                            </div>
+                            <button class="cart">
+                                ADD TO CART
+                            </button>
+                           </a>
+                    </div>
+                    <div class="item product">
+                        <a href="product.html">
+                            <div class="image">
+                                <img src="https://demo.ishithemes.com/opencart/OPC100/OPC100L02/image/cache/catalog/productsimage/1-1000x1000.jpg" alt="">
+                                <img class="last-image" src="https://demo.ishithemes.com/opencart/OPC100/OPC100L02/image/cache/catalog/productsimage/10-370x370.jpg" alt="">
+                                <a href=""><i class="fa-regular fa-eye"></i></a>
+                                <a href=""><i class="fa-regular fa-heart"></i></a>
+                                <a href=""><i class="fa-solid fa-code-compare"></i></a>
+                            </div>
+                            <div class="text">
+                                <h4>iPod Shuffle</h4>
+                                <span>122</span>
+                            </div>
+                            <button class="cart">
+                                ADD TO CART
+                            </button>
+                           </a>
+                    </div>
+                    <div class="item product">
+                        <a href="product.html">
+                            <div class="image">
+                                <img src="https://demo.ishithemes.com/opencart/OPC100/OPC100L02/image/cache/catalog/productsimage/1-1000x1000.jpg" alt="">
+                                <img class="last-image" src="https://demo.ishithemes.com/opencart/OPC100/OPC100L02/image/cache/catalog/productsimage/10-370x370.jpg" alt="">
+                                <a href=""><i class="fa-regular fa-eye"></i></a>
+                                <a href=""><i class="fa-regular fa-heart"></i></a>
+                                <a href=""><i class="fa-solid fa-code-compare"></i></a>
+                            </div>
+                            <div class="text">
+                                <h4>Canon EOS 5D</h4>
+                                <span>122</span>
+                            </div>
+                            <button class="cart">
+                                ADD TO CART
+                            </button>
+                           </a>
+                    </div>
+                    <div class="item product">
+                        <a href="product.html">
+                            <div class="image">
+                                <img src="https://demo.ishithemes.com/opencart/OPC100/OPC100L02/image/cache/catalog/productsimage/1-1000x1000.jpg" alt="">
+                                <img class="last-image" src="https://demo.ishithemes.com/opencart/OPC100/OPC100L02/image/cache/catalog/productsimage/10-370x370.jpg" alt="">
+                                <a href=""><i class="fa-regular fa-eye"></i></a>
+                                <a href=""><i class="fa-regular fa-heart"></i></a>
+                                <a href=""><i class="fa-solid fa-code-compare"></i></a>
+                            </div>
+                            <div class="text">
+                                <h4>iPod Nano"</h4>
+                                <span>122</span>
+                            </div>
+                            <button class="cart">
+                                ADD TO CART
+                            </button>
+                        </a>
+                    </div>
+                    <div class="item product">
+                        <a href="product.html">
+                            <div class="image">
+                                <img src="https://demo.ishithemes.com/opencart/OPC100/OPC100L02/image/cache/catalog/productsimage/1-1000x1000.jpg" alt="">
+                                <img class="last-image" src="https://demo.ishithemes.com/opencart/OPC100/OPC100L02/image/cache/catalog/productsimage/10-370x370.jpg" alt="">
+                                <a href=""><i class="fa-regular fa-eye"></i></a>
+                                <a href=""><i class="fa-regular fa-heart"></i></a>
+                                <a href=""><i class="fa-solid fa-code-compare"></i></a>
+                            </div>
+                            <div class="text">
+                                <h4>iPod Shuffle</h4>
+                                <span>122</span>
+                            </div>
+                            <button class="cart">
+                                ADD TO CART
+                            </button>
+                           </a>
+                    </div>
+                    <div class="item product">
+                        <a href="product.html">
+                            <div class="image">
+                                <img src="https://demo.ishithemes.com/opencart/OPC100/OPC100L02/image/cache/catalog/productsimage/1-1000x1000.jpg" alt="">
+                                <img class="last-image" src="https://demo.ishithemes.com/opencart/OPC100/OPC100L02/image/cache/catalog/productsimage/10-370x370.jpg" alt="">
+                                <a href=""><i class="fa-regular fa-eye"></i></a>
+                                <a href=""><i class="fa-regular fa-heart"></i></a>
+                                <a href=""><i class="fa-solid fa-code-compare"></i></a>
+                            </div>
+                            <div class="text">
+                                <h4>Apple Cinema 30"</h4>
+                                <span>122</span>
+                            </div>
+                            <button class="cart">
+                                ADD TO CART
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="contact m-3">
+            <div class="container contact__wrapper">
+                <div class="row row-cols-lg-2 row-cols-1 m-0 w-100">
+                    <div class="col-lg-6 col-12">
+                        <div id="contact-form">
+                            <div class="contact__wrapper__title">
+                                <span>CONTACT</span>
+                                <h3>Contact Us</h3>
+                            </div>
+                            <div class="contact__wrapper__form">
+                                <form action="">
+                                    <div class="contact__wrapper__form__inputs">
+                                        <input type="text" placeholder="Name">
+                                        <input type="email" placeholder="Enter your email">
+                                    </div>
+                                    <textarea name="ta" id="tx" cols="30" rows="10" placeholder="Your Message"></textarea>
+                                    <button type="button">SEND MESSAGE</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <div id="subscribe-form">
+                            <div class="contact__wrapper__title">
+                                <span>SUBSCRIBE</span>
+                                <h3>Newsletter</h3>
+                            </div>
+                            <div class="news-text">
+                                <div class="svg-news">
+                                    <span class="news-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">          
+                                            <symbol id="news-icon" viewBox="0 0 500 500"><title>news-icon</title>
+                                              <path d="m494.2,488c0,0 0-225.8 0-301 0-3.1-3.9-7-7.7-9.9l-78.7-57.1v-63.1c0-6.2-5.2-10.4-10.4-10.4h-89.7l-45.7-33.3c-3.1-2.1-8.3-2.1-11.5,0l-45.7,33.3h-89.7c-6.2,0-10.4,5.2-10.4,10.4v62.4l-79.7,57.9c-4.7,2.9-7.7,6.7-7.7,9.9 0,75.7 0,303 0,303 0,5.9 4.7,10 9.6,10.4 0.3,0 0.5,0 0.8,0h456c6.7-0.1 10.5-5.3 10.5-12.5zm-19.8-282.3v263.6l-172.1-137.8 172.1-125.8zm-7.7-18.3l-58.9,42.9v-86.2l58.9,43.3zm-210.9-154.5l18.3,13.5h-36.7l18.4-13.5zm131.2,34.4v178.2l-131.2,95.6-131.2-95.6v-178.2h262.4zm-349.8,138.4l172.1,125.8-172.1,138.6v-264.4zm67.6,25.4l-60.4-44 60.4-43.9v87.9zm-48.9,249.5l170.1-136.9 23.5,17.2c4.5,3.4 7.9,3.4 12.5,0l23.5-17.2 171.1,136.9h-400.7z"></path><rect width="140.5" x="186.1" y="118.3" height="19.8"></rect><rect width="140.5" x="186.1" y="181.8" height="19.8"></rect><rect width="140.5" x="186.1" y="245.3" height="19.8"></rect>
+    
+                                             </symbol> 
+                                        </svg>
+                                        <svg class="icon" viewBox="0 0 30 30"><use xlink:href="#news-icon" x="0%" y="0%"></use></svg>
+                                    </span>
+                                </div>
+                                <h4>Join Our Newsletter</h4>
+                                <span>Enter your email address and recived news.</span>
+                                <input type="email" placeholder="Enter your email" class="position-relative">
+                                    <button class="position-absolute">SUBSCRIBE</button>
+                                </input>
+                            </div>
+                            <div class="news-icons">
+                                <ul class="list-unstyled">
+                                    <li><a href="">
+                                        <i class="fa-brands fa-facebook"></i>
+                                    </a></li>
+                                    <li><a href="">
+                                        <i class="fa-brands fa-twitter"></i>
+                                    </a></li>
+                                    <li><a href="">
+                                        <i class="fa-brands fa-youtube"></i>
+                                    </a></li>
+                                    <li><a href="">
+                                        <i class="fa-brands fa-google-plus"></i>
+                                    </a></li>
+                                    <li><a href="">
+                                        <i class="fa-brands fa-pinterest"></i>
+                                    </a></li>
+                                    <li><a href="">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a></li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <ul class="list-unstyled">
+            <li>Brands </li>
+            <li>Gift Certificates </li>
+            <li>Affiliates </li>
+            <li>Specials </li>
+            <li>Site Map</li>
+        </ul>
+        <ul class="list-unstyled">
+            <li>My Account </li>
+            <li>Specials </li>
+            <li>Brands </li>
+            <li>Order History </li>
+            <li>Contact Us</li>
+        </ul>
+    </footer>
+    <!-- JS CDN -->
+<!-- jQuery cdn link -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<!-- Owl plugin link -->
+<script src="assets/plugins/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+<script src="assets/plugins/aos-2/dist/aos.js"></script>
+<script src="assets/components/product/js/product.js"></script>
+<script>
+    AOS.init();
+</script>
+<!-- Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+</body>
+
+<style>
+
+</style>
+</html>

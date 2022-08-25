@@ -1,1 +1,132 @@
-/*# sourceMappingURL=product.css.map */
+.background-image__ul li::before {
+  left: -10px !important;
+}
+
+.image-product {
+  margin-top: 20px;
+}
+.image-product img {
+  width: 100%;
+  height: 100%;
+  border: 1px solid gainsboro;
+}
+
+.carousel {
+  margin-top: 50px;
+}
+.carousel img {
+  border: 1px solid gainsboro;
+}
+
+body {
+  height: 200vh;
+}
+
+.product-line {
+  width: 100px;
+  height: 2px;
+  background-color: gray;
+}
+
+.desc-prod h5 {
+  font-size: 16px;
+}
+.desc-prod p {
+  color: gray;
+  font-weight: 300;
+  font-size: 13px;
+}
+.desc-prod ul {
+  padding-left: 0;
+}
+.desc-prod li {
+  color: gray;
+  font-weight: 300;
+  font-size: 13px;
+  margin-left: 0;
+}
+
+.review-prod .review-form {
+  display: flex;
+  flex-direction: column;
+}
+.review-prod .review-form input {
+  width: 60%;
+}
+.review-prod .review-form label::before {
+  content: "*";
+  color: red;
+}
+.review-prod .review-form .rating-review {
+  display: flex;
+}
+.review-prod .review-form .rating-review input {
+  width: 15px;
+}
+.review-prod .review-form .rating-review > * {
+  margin-right: 10px;
+}
+
+.cart-product {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 100px;
+}
+.cart-product h4 {
+  font-size: 26px;
+  border-bottom: 1px solid gainsboro;
+  padding: 30px 0 15px 0;
+}
+.cart-product .sharing-prod {
+  padding: 20px 0;
+}
+.cart-product .sharing-prod .facebook-fav-button {
+  border: none;
+  background-color: rgb(53, 120, 243);
+  border-radius: 5px;
+  color: white;
+  font-size: 13px;
+}
+.cart-product .sharing-prod .twitter-fav-button {
+  border: none;
+  background-color: rgb(46, 183, 236);
+  border-radius: 5px;
+  color: white;
+  font-size: 13px;
+}
+.cart-product .review-stars a {
+  margin-left: 50px;
+}
+.cart-product .review-stars i, .cart-product .review-stars span {
+  font-size: 13px;
+  color: rgba(96, 96, 96, 0.991);
+}
+.cart-product .pricing-prod p {
+  margin: 0;
+}
+.cart-product .specs .row .col-6 {
+  box-sizing: border-box;
+  padding: 8px 20px;
+}
+.cart-product .specs .row .col-6 div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid gainsboro;
+  border-radius: 5px;
+}
+.cart-product .specs .row .col-6 div .brand-title {
+  background-color: rgb(231, 228, 228);
+  width: 90%;
+  text-align: center;
+  margin-top: 3px;
+  padding: 5px 0;
+}
+
+.yellow {
+  color: rgb(255, 153, 0) !important;
+}
+
+footer {
+  margin-top: 200px;
+}/*# sourceMappingURL=product.css.map */

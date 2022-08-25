@@ -1,1 +1,57 @@
-/*# sourceMappingURL=collection.css.map */
+main {
+  margin-top: 50px;
+}
+
+aside .categories, aside .refine, aside .bestseller {
+  border: 1px solid gainsboro;
+  margin-bottom: 20px;
+}
+aside .categories ul, aside .refine ul, aside .bestseller ul {
+  list-style-type: none;
+}
+aside .categories ul li, aside .refine ul li, aside .bestseller ul li {
+  margin: 5px 0;
+}
+aside .categories h5, aside .refine h5, aside .bestseller h5 {
+  background-color: gainsboro;
+  padding: 10px 5px 10px 32px;
+  font-weight: 300;
+}
+aside .refine h6 {
+  padding-left: 32px;
+}
+aside .refine input {
+  margin-right: 5px;
+}
+aside .refine .refine-button {
+  text-align: center;
+  margin-left: 20%;
+  margin-bottom: 10px;
+}
+aside .discount {
+  margin-bottom: 20px;
+}
+aside .bestseller li {
+  display: flex;
+}
+aside .bestseller li div {
+  margin-right: 5px;
+}
+aside .bestseller li div p {
+  color: red;
+}
+
+.compare-filters {
+  display: flex;
+  justify-content: space-between;
+  background-color: gainsboro;
+  padding: 30px 10px;
+}
+.compare-filters i {
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.active {
+  display: block;
+}/*# sourceMappingURL=collection.css.map */

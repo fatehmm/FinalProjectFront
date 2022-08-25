@@ -1,0 +1,66 @@
+main{
+    margin-top: 50px;
+}
+aside{
+    .categories, .refine, .bestseller {
+        ul{
+            list-style-type: none;
+            li{
+                margin: 5px 0;
+            }
+        }
+        border: 1px solid gainsboro;
+        // width: 18%;
+        h5{
+            background-color: gainsboro;
+            padding: 10px 5px 10px 32px;
+            font-weight: 300;
+        }
+        margin-bottom: 20px;
+    }
+    .refine{
+        h6{
+            padding-left: 32px;
+        }
+        input{
+            margin-right: 5px;
+        }
+        .refine-button{
+            text-align: center;
+            // float: right;
+            margin-left: 20%;
+            margin-bottom: 10px;
+        }
+    }
+    .discount{
+        margin-bottom: 20px;
+    }
+    .bestseller{
+        li{
+            display: flex;
+            div{
+                margin-right: 5px;
+                p{
+                    color: red;
+                }
+            }
+        }
+    }
+    
+  
+}
+
+
+.compare-filters{
+    display: flex;
+    justify-content: space-between;
+    background-color: gainsboro;
+    padding: 30px 10px;
+    i{
+        font-size: 20px;
+        margin-left: 10px;
+    }
+}
+.active{
+    display: block;
+}

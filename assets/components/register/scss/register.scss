@@ -70,19 +70,42 @@
         margin: 7%;
         padding: 5%;
         border: 1px solid gainsboro;
-        button{
+        button, custom-button{
             background-color: black;
             border: 0;
             color: white;
             padding: 5px 10px;
         }
-        button:hover{
+        button:hover, custom-button:hover{
             background-color: rgba(255, 76, 76, 0.887);
             transition: 0.5s;
         }
     }
 }
 
+.custom-button{
+    background-color: black;
+    border: 0;
+    color: white;
+    padding: 5px 10px; 
+}
+
+.custom-button:hover{
+    background-color: rgba(255, 76, 76, 0.887);
+            transition: 0.5s;
+}
+
+.custom-button-reverse{
+    background-color: rgba(255, 76, 76, 0.887);
+    border: 0;
+    color: white;
+    padding: 5px 10px; 
+}
+
+.custom-button-reverse:hover{
+   background-color: black;
+            transition: 0.5s;
+}
 
 
 // Keyframes 
