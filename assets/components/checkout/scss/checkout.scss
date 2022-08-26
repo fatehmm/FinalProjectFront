@@ -1,0 +1,58 @@
+.checkout-table{
+    // border: 1px solid gainsboro;
+    width: 80%;
+    margin: 50px auto;
+    td{
+        border: 1px solid gainsboro;
+        text-align: center;
+        padding: 10px;
+        font-size: 13px;
+        font-weight: 500;
+    }
+    th{
+        td{
+            background-color: rgb(219, 214, 214) !important;
+        }
+    }
+    tbody{
+        tr{
+            height: 113px;
+            td{
+                height: 113px;
+                img{
+                    height: 95%;
+                    
+                }
+            }
+        }
+    }
+}
+.add-button{
+    border: 0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: rgb(41, 159, 41);
+    color: white;
+    font-size: 18px;
+}
+.add-button:hover{
+    background-color: rgb(89, 229, 89);
+    transition: 0.5s;
+}
+
+.remove-button{
+    border: 0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: rgb(159, 41, 41);
+    color: white;
+    font-size: 18px;
+}
+.remove-button:hover{
+    background-color: rgb(229, 89, 89);
+    transition: 0.5s;
+}
+.checkout-button{
+    margin-right: 200px;
+    margin-bottom: 100px;
+}
